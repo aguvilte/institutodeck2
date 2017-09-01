@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Ricardo Azcurra</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Encode+Sans|Parisienne|Petit+Formal+Script|Pinyon+Script|Radley" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Anton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body style="background-color: #d7ccc8">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card-2" style="background-color:#111111;color:#d7ccc8;">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="../index.html#quienes-somos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">QUIÉNES SOMOS</a>
+    <!-- <a href="#cursos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CURSOS</a> -->
+    <div class="w3-dropdown-hover w3-hide-small">
+     <a href="../index.html#cursos"><button class="w3-padding-large w3-button" title="More" >CURSOS <i class="fa fa-caret-down"></i></button></a>
+     <div class="w3-dropdown-content w3-bar-block w3-card-4" style="background-color:#111111;color:#d7ccc8">
+       <a href="./curso-us.html" class="w3-bar-item w3-button">Inglés americano</a>
+       <a href="./curso-gb.html" class="w3-bar-item w3-button">Inglés británico</a>
+       <a href="./curso-germany.html" class="w3-bar-item w3-button">Alemán</a>
+     </div>
+   </div>
+    <a href="../index.html#profesores" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROFESORES</a>
+    <a href="../index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONSULTAS</a>
+  </div>
+</div>
+
+<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px;background-color:#111111;color:#d7ccc8;">
+  <a href="../index.html#quienes-somos" class="w3-bar-item w3-button w3-padding-large">QUIÉNES SOMOS</a>
+  <a href="../index.html#cursos" class="w3-bar-item w3-button w3-padding-large">CURSOS</a>
+  <a href="../index.html#profesores" class="w3-bar-item w3-button w3-padding-large">PROFESORES</a>
+  <a href="../index.html#contact" class="w3-bar-item w3-button w3-padding-large">CONSULTAS</a>
+</div>
+
+<!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide titulo">Ricardo Azcurra</h2>
+    <img src="../public/img/teacher1.jpg" class="w3-circle w3-margin-bottom" alt="Random Name" style="width:60%;max-width:255px;">
+    <!-- <p class="w3-opacity"><i>We love music</i></p> -->
+    <p class="w3-justify">El Instituto Deck está dedicado a la enseñanza de idiomas desde hace más de 20 años. Acá se formaron, entre otros, Ricardo Gabriel Azcurra, Agustín Vilte y Marcelo Medina.
+      El instituto está ubicado en Avenida 100 al 1200 entre la Calle 80 y Calle 120.
+      Actualmente, contamos con más de 150 alumnos.
+      También, realizamos eventos para recaudar fondos y realizar viajes al exterior para mejorar la calidad de nuestros estudiantes.</p>
+      <p class="w3-justify">Tenemos las inscripciones abiertas todo el año así que si estás interesado, sumate que no te vas a arrepentir.</p>
+  </div>
+
+  <script>
+  function myMap() {
+    myCenter=new google.maps.LatLng(-29.421243, -66.867012);
+    var mapOptions= {
+      center:myCenter,
+      zoom:15, scrollwheel: false, draggable: false,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myCenter,
+    });
+    marker.setMap(map);
+  }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU_1ysxgadyGgkWMaKblsVyPkcuoVPBus&callback=myMap"></script>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-center w3-xlarge" style="background-color:#111111;color:#d7ccc8;">
+    <p class="w3-medium">Realizado por <a href="https://www.monstering.com" target="_blank">MONSTER ING.</a></p>
+  </footer>
+
+  <script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      // setTimeout(carousel, 4000);
+  }
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+</body>
+</html>

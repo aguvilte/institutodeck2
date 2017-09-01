@@ -10,7 +10,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 /*body {font-family: "Lato", sans-serif}*/
-body {font-family: 'Montserrat', sans-serif;}
+body {font-family: 'Montserrat', sans-serif;text-decoration:none;}
+* {
+  text-decoration: none;
+}
 .mySlides {display: none}
 </style>
 <body>
@@ -23,11 +26,11 @@ body {font-family: 'Montserrat', sans-serif;}
     <a href="#quienes-somos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">QUIÉNES SOMOS</a>
     <!-- <a href="#cursos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CURSOS</a> -->
     <div class="w3-dropdown-hover w3-hide-small">
-     <button class="w3-padding-large w3-button" title="More" >CURSOS <i class="fa fa-caret-down"></i></button>
+     <a href="#cursos"><button class="w3-padding-large w3-button" title="More" >CURSOS <i class="fa fa-caret-down"></i></button></a>
      <div class="w3-dropdown-content w3-bar-block w3-card-4" style="background-color:#111111;color:#d7ccc8">
-       <a href="#" class="w3-bar-item w3-button">Inglés americano</a>
-       <a href="#" class="w3-bar-item w3-button">Inglés británico</a>
-       <a href="#" class="w3-bar-item w3-button">Alemán</a>
+       <a href="./html/curso-us.html" class="w3-bar-item w3-button">Inglés americano</a>
+       <a href="./html/curso-gb.html" class="w3-bar-item w3-button">Inglés británico</a>
+       <a href="./html/curso-germany.html" class="w3-bar-item w3-button">Alemán</a>
      </div>
    </div>
     <a href="#profesores" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROFESORES</a>
@@ -52,7 +55,7 @@ body {font-family: 'Montserrat', sans-serif;}
     <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <b><h1 style="font-family: 'Anton', sans-serif;font-size:100px;color:#d7ccc8;">INSTITUTO DECK</h1></b>
       <div style="margin:0 auto;padding:0px 15px;background-color:#111111;border-radius:50px;">
-        <p style="color:white"><b>La mejor educación es aprender con nosotros</b></p>
+        <p style="color:white"><b>La mejor opción para aprender está aquí. Firme junto al pueblo</b></p>
       </div>
     </div>
   </div>
@@ -79,30 +82,27 @@ body {font-family: 'Montserrat', sans-serif;}
 
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
         <div class="w3-third w3-margin-bottom">
-          <a href="./ingles-americano.html"><img src="./public/img/flag-us.jpg" alt="Inglés americano" style="width:100%;border-style:solid;border-color:#FFF" class="w3-hover-opacity"></a>
+          <a href="./html/curso-us.html"><img src="./public/img/flag-us.jpg" alt="Inglés americano" style="min-width:98%;width:100%;max-height:200px;border-style:solid;border-color:#FFF" class="w3-hover-opacity"></a>
           <div class="w3-container w3-white">
-            <a href="./ingles-americano.html">
-              <p><b>Inglés americano</b></p>
+            <a href="./html/curso-us.html">
+              <p style="text-align:center"><b>Inglés americano</b></p>
             </a>
-              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <a href="./ingles-britanico.html"><img src="./public/img/flag-gb.jpg" alt="Inglés británico" style="width:100%;border-style:solid;border-color:#FFF" class="w3-hover-opacity"></a>
+          <a href="./html/curso-gb.html"><img src="./public/img/flag-gb.jpg" alt="Inglés británico" style="width:100%;max-height:200px;border-style:solid;border-color:#FFF" class="w3-hover-opacity"></a>
           <div class="w3-container w3-white">
-            <a href="./ingles-britanico.html">
-              <p><b>Inglés británico</b></p>
+            <a href="./html/curso-gb.html">
+              <p style="text-align:center"><b>Inglés británico</b></p>
             </a>
-              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
-          <a href="./aleman.html"><img src="./public/img/flag-germany.jpg" alt="Alemán" style="width:100%;border-style:solid;border-color:#FFF" class="w3-hover-opacity"></a>
+          <a href="./html/curso-germany.html"><img src="./public/img/flag-germany.jpg" alt="Alemán" style="width:100%;max-height:200px;border-style:solid;border-color:#FFF" class="w3-hover-opacity"></a>
           <div class="w3-container w3-white">
-            <a href="./aleman.html">
-              <p><b>Alemán</b></p>
+            <a href="./html/curso-germany.html">
+              <p style="text-align:center"><b>Alemán</b></p>
             </a>
-              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
           </div>
         </div>
       </div>
@@ -115,21 +115,21 @@ body {font-family: 'Montserrat', sans-serif;}
       <h1 style="font-family: 'Montserrat', sans-serif;" class="w3-wide">PROFESORES</h1>
       <div class="w3-row w3-padding-32">
         <div class="w3-third">
-          <a href="./profesor.html">
-            <p>Ricardo Azcurra</p>
-            <img src="./public/img/teacher4.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:75%;border-radius:50%;">
+          <a href="./html/ricardo.html">
+            <a href="./html/ricardo.html" style="font-size:20px;color:#6d4c41">Ricardo Azcurra</a>
+            <img src="./public/img/teacher1.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:75%;border-radius:50%;">
           </a>
         </div>
         <div class="w3-third">
-          <a href="./profesor.html">
-            <p>Marcelo Medina</p>
-            <img src="./public/img/teacher6.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:75%;border-radius:50%;">
+          <a href="./html/marcelo.html">
+            <a href="./html/marcelo.html" style="font-size:20px;color:#6d4c41">Marcelo Medina</a>
+            <img src="./public/img/teacher2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:75%;border-radius:50%;">
           </a>
         </div>
         <div class="w3-third">
-          <a href="./profesor.html">
-            <p>Agustín Vilte</p>
-            <img src="./public/img/teacher5.jpeg" class="w3-round" alt="Random Name" style="width:75%;border-radius:50%;">
+          <a href="./html/agustin.html">
+            <a href="./html/agustin.html" style="font-size:20px;color:#6d4c41">Agustín Vilte</a>
+            <img src="./public/img/teacher3.jpg" class="w3-round" alt="Random Name" style="width:75%;border-radius:50%;">
           </a>
         </div>
       </div>
